@@ -12,8 +12,10 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_aluno")
+@Table(name = "tb_funcionario")
 public class Funcionario {
+
+	private static String SegundonomeFuncionario = null;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,8 +54,16 @@ public class Funcionario {
 		return nomeFuncionario;
 	}
 
-	public void setNomeAluno(String nomeAluno) {
-		this.nomeFuncionario = nomeAluno;
+	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
+	}
+	
+	public String getSegundoNomeFuncionario() {
+		return SegundonomeFuncionario;
+	}
+
+	public void setSegundoNomeFuncionario(String SegundonomeFuncionario) {
+		this.SegundonomeFuncionario = nomeFuncionario;
 	}
 
 	public List<Projeto> getProjeto() {
