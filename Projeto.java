@@ -37,8 +37,6 @@ public class Projeto {
 		this.nomeProjeto = nomeProjeto;
 		this.funcionario = funcionarios;
 	}
-
-	//metodos get e set
 	public Long getId() {
 		return id;
 	}
