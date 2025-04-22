@@ -47,7 +47,7 @@ public class Projeto {
 		this.id = id;
 	}
 
-	public String getNomeCurso() {
+	public String getNomeProjeto() {
 		return nomeProjeto;
 	}
 
@@ -55,7 +55,7 @@ public class Projeto {
 		this.nomeProjeto = nomeProjeto;
 	}
 
-	public List<Funcionario> getAlunos() {
+	public List<Funcionario> getFuncionarios() {
 		return funcionario;
 	}
 
