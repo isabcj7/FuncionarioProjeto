@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_curso")
+@Table(name = "tb_projeto")
 public class Projeto {
 	
 	@Id
